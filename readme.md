@@ -13,3 +13,9 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 Bonus:
 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+
+
+- creo lista array che poi stampo con un v-for
+- creo una funzione che mi cambia il valore booleano, e creo una classe CSS da collegare al HTML insieme alla proprietà dell'oggetto, in modo che cambiando a true, la stringa è sbarrata
+- aggiungo icona con click della funzione (la stringa si sbarra al click)
+- creo un input  con un bottone che interfacci con JS, e vi creo una funzione che al click del bottone, si aggiunge una task alla lista
