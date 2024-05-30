@@ -14,7 +14,7 @@ createApp({
                 },
                 {
                     text: 'pulire pc',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'prendere biglietti mostra',
@@ -44,6 +44,10 @@ createApp({
 
 
             this.newTask = '';
+        },
+
+        removeTask(removeIndex) {
+            this.toDoList.splice(removeIndex, 1);
         }
     },
 

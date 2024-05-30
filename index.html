@@ -19,8 +19,8 @@
         <section>
             <h2>To Do List</h2>
             <ul>
-                <li v-for="(item, index) in toDoList" :key="index" :class="{done: item.done}">{{item.text}} <i
-                        class="fa-solid fa-xmark" @click="taskDone(index)"></i></li>
+                <li v-for="(item, index) in toDoList" :key="index" :class="{done: item.done}" @click="taskDone(index)">
+                    {{item.text}} <i class="fa-solid fa-xmark" @click="removeTask"></i></li>
             </ul>
             <div class="flex">
                 <label for="addtask">Da aggiungere</label>
