@@ -21,15 +21,32 @@ createApp({
                     done: false
                 }
 
-            ]
+            ],
+
+            newTask: ''
+
         }
     },
 
     methods: {
         taskDone(index) {
             this.toDoList[index].done = !this.toDoList[index].done;
+        },
+
+        addNewTask() {
+            const writeTask = {
+                text: this.newTask,
+                done: false
+            }
+
+            this.newTask = writeTask;
+            this.toDoList.push(writeTask);
+
+
+            this.newTask = '';
         }
-    }
+    },
+
 
 
 }).mount('#app')

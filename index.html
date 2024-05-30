@@ -16,10 +16,20 @@
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(item, index) in toDoList" :key="index" :class="{done: item.done}">{{item.text}} <i
-                    class="fa-solid fa-xmark" @click="taskDone(index)"></i></li>
-        </ul>
+        <section>
+            <h2>To Do List</h2>
+            <ul>
+                <li v-for="(item, index) in toDoList" :key="index" :class="{done: item.done}">{{item.text}} <i
+                        class="fa-solid fa-xmark" @click="taskDone(index)"></i></li>
+            </ul>
+            <div class="flex">
+                <label for="addtask">Da aggiungere</label>
+                <input v-model="newTask" type="text" name="more-tasks" id="addtask">
+                <div>
+                    <button @click="addNewTask">Aggiungi</button>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="./js/todolist.js"></script>
 </body>
